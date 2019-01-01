@@ -1,5 +1,5 @@
 {
-  "name": "itunes",
+  "name": "toiletFinder",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlaiseRoberts/proxy-server.git"
+    "url": "git+https://github.com/Kazathur92/ToiletFinderProxy"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BlaiseRoberts/proxy-server/issues"
+    "url": "https://github.com/Kazathur92/ToiletFinderProxy/issues"
   },
-  "homepage": "https://github.com/BlaiseRoberts/proxy-server#readme",
+  "homepage": "https://github.com/Kazathur92/ToiletFinderProxy#readme",
   "dependencies": {
-    "express": "^4.14.1",
-    "request": "^2.79.0"
+    "express": "^4.16.4",
+    "request": "^2.88.0"
   }
 }

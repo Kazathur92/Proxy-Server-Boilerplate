@@ -14,12 +14,19 @@ app.use(function(req, res, next) {
 });
 
 
-app.get('/api/itunes/*', (req, res) => {
-  let apiCall = req.url.slice('/api/itunes/'.length)
-  let apiReq = `https://itunes.apple.com/search${apiCall}`
+app.get('/api/maps', (req, res) => {
+  console.log("call made to api", req.query)
+  const MapsRemoteURL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=public+bathroom&location=36.1627,%20-86.7816&radius=10000"
+  const query = `&location=${req.query.location}&radius=${req.query.radius}`
+  const key = "&key=AIzaSyDOEBqiYykHzoCJyKAij9f2UwaF-DxtuBs"
+  console.log(query)
+  let apiReq = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=public+bathroom&${query}${key}`
   request.get(apiReq, (err, _, body) => {
+    if (err) {
+      return console.error("request failed", err)
+    }
     res.send(body)
-  });
+  })
 });
 
 app.listen(port, () =>
