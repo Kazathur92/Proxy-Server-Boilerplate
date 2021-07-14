@@ -1,5 +1,5 @@
 {
-  "name": "toiletFinder",
+  "name": "panda-aja",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kazathur92/ToiletFinderProxy"
+    "url": "git+https://github.com/luzm321/panda-aja-proxy-server"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kazathur92/ToiletFinderProxy/issues"
+    "url": "https://github.com/luzm321/panda-aja-proxy-server/issues"
   },
-  "homepage": "https://github.com/Kazathur92/ToiletFinderProxy#readme",
+  "homepage": "https://github.com/luzm321/panda-aja-proxy-server#readme",
   "dependencies": {
     "express": "^4.16.4",
     "request": "^2.88.0"
