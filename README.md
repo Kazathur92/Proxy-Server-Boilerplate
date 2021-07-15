@@ -1,3 +1,14 @@
+# This is the proxy server for the panda-aja-prototype app (github repository link: https://github.com/luzm321/panda-aja-prototype) which should be served on port: localhost 3000 (type in terminal: node server.js -p 3000 -w) in conjunction with also serving the panda-aja-prototype application on a separate port in order for API fetch calls to work.
+
+This proxy was created as a solution to avoid receiving CORS error in the browser when doing fetch calls and utilizing the Microsoft Translator Text external API (Testing the URL was done
+successfully in Postman, but the application could not successfully make the request and dowloading the Chrome extension that enables CORS on the browser did not fix the problem).
+
+
+express is an npm package for node https://www.npmjs.com/package/express which makes it possible for this proxy server to listen to specific queries 
+made from the specified port and other things such as .use() method to set the headers to avoid CORS issues. This node fetch npm package was installed because request is deprecated.
+
+Below is the README and link to Blaise Roberts's github repository on how to solve CORS problems.
+
 # Solving Cross-Origin-Relationship Problems
 This will help you if you are testing a URL successfully in Postman, but your application will not successfully make your request.  You will get an error in your console that looks like this: 
 ```
