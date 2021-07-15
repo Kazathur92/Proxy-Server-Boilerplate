@@ -22,6 +22,7 @@
   "homepage": "https://github.com/luzm321/panda-aja-proxy-server#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "node-fetch": "^2.6.1",
     "request": "^2.88.0"
   }
 }
