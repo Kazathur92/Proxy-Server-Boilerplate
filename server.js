@@ -26,7 +26,7 @@ app.use(function(req, res, next) {
 app.get('/api/translate', (req, res) => {
   // over in panda-aja! prototype, the app fetched to this server by doing a fetch('localhost:3000/api/translate?&language=ko&phrase="woah") the values after the "?"
   // are sent here as an object which we can access using the parameter of req, req.query and then by using dot notation you can access each value
-  const url = `https://microsoft-translator-text.p.rapidapi.com/translate?api-version=3.0&to=${req.query.language}&textType=plain&profanityAction=NoAction&from=en`
+  const url = `https://microsoft-translator-text.p.rapidapi.com/translate?api-version=3.0&to=${req.query.language}&textType=plain&profanityAction=NoAction&from=${req.query.fromLanguage}`
   console.log('req', req.query, 'call', url);
   // those values are not restricted to be used in the url, you can also use them anywhere you'd like inside this .get() function, and so
   // you are putting the phrase in the body.
